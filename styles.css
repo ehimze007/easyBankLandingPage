@@ -1,0 +1,229 @@
+/**********************General Styling*****************************/
+body {
+  margin: 0;
+  background-color: hsl(0, 0%, 98%);
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: "Public Sans", sans-serif;
+}
+
+.button {
+  border-radius: 25px;
+  padding: 15px 25px;
+  background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  border: none;
+  color: white;
+  font-weight: 700;
+  outline: none;
+}
+
+.button:hover, .item:hover, .service:hover {
+  box-shadow: 5px 5px 10px hsl(233, 8%, 62%);
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px;
+}
+
+li:hover {
+  box-shadow: 5px 5px 10px hsl(233, 8%, 62%);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*****************Styling for the main navigation Bar******************/
+.topNavBar {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  z-index: 2;
+  font-weight: 300;
+}
+
+.hamburgerImg {
+  display: none;
+}
+
+.nav2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.newNav2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.topContact {
+  padding-left: 0px;
+}
+
+/*********************Styling for nextGenDiv container *********************/
+.nextGenDiv {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  justify-content: space-around;
+}
+
+.midDiv1 {
+  word-wrap: break-word;
+  padding-left: 8%;
+  flex: 200px;
+}
+
+.nextGenHeader {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.midDiv2 {
+  flex: 400px;
+  height: 400px;
+  background: url(images/bg-intro-desktop.svg) no-repeat;
+  background-size: 120% 170%;
+  background-position: 50px -180px;
+}
+
+.midDiv3 {
+  width: 90%;
+  height: 160%;
+  background: url(images/image-mockups.png) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  top: -90px;
+  left: 25%;
+  z-index: 1;
+}
+
+/*******************Styling for easyBank container*******************/
+.easyBankDiv {
+  background-color: hsl(220, 16%, 96%);
+  padding: 5% 8% 0 8%;
+}
+
+.easyBankQuestion {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.easyBankAnswer {
+  padding: 0 0 20px 0;
+}
+
+.serviceList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service1, .service2,
+.service3, .service4 {
+  flex: 250px;
+  margin: 5px 2px;
+}
+
+.secondDescription {
+  padding: 0 50px;
+}
+
+/*****************************Styling for latestArticleDiv*****************************************/
+.latestArticleDiv {
+  padding: 5% 8% 100px 8%;
+}
+
+.latestArticlesHeader {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.articleItems {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.articleImg {
+  object-fit: fill;
+  width: 100%;
+  height: 50%;
+  border-radius: 5px 5px 0 0;
+}
+
+.item1, .item2, .item3, .item4 {
+  flex: 250px;
+  margin: 5px 5px;
+  background-color: hsl(0, 0%, 100%);
+  padding-bottom: 12px;
+}
+
+.articleText {
+  padding: 15px;
+}
+
+/*******************footer Styling*****************************/
+.bottomNavBar1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: hsl(233, 26%, 24%);
+  color: white;
+  margin-top: 50px;
+  padding-top: 10px;
+}
+
+.logoAndAboutUs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logoImg2 {
+  display: block;
+  clear: both;
+  margin-bottom: 25px;
+}
+
+.icons {
+  display: inline-block;
+  float: left;
+  margin: 5px 15px 0 0px;
+}
+.contactList ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-top: 0px;
+}
+
+.requestInviteDiv {
+  display: flex;
+  height: 80px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
