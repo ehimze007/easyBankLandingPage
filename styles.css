@@ -2,8 +2,7 @@
 body {
   margin: 0;
   background-color: hsl(0, 0%, 98%);
-  overflow-x: hidden;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Public Sans", sans-serif;
 }
 
@@ -24,7 +23,7 @@ body {
 li {
   display: inline-block;
   list-style: none;
-  margin: 5px;
+  margin: 5px 10px 5px;
 }
 
 li:hover {
@@ -49,26 +48,13 @@ a {
   font-weight: 300;
 }
 
-.hamburgerImg {
+.hamburgerImg{
   display: none;
 }
 
-.nav2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 60%;
-}
-
-.newNav2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 60%;
-}
-
-.topContact {
-  padding-left: 0px;
+.nav2,
+.newNav2{
+display: none;
 }
 
 /*********************Styling for nextGenDiv container *********************/
@@ -82,7 +68,7 @@ a {
 
 .midDiv1 {
   word-wrap: break-word;
-  padding-left: 8%;
+  padding: 0 8%;
   flex: 200px;
 }
 
@@ -92,21 +78,22 @@ a {
 }
 
 .midDiv2 {
+  position: relative;
   flex: 400px;
   height: 400px;
   background: url(images/bg-intro-desktop.svg) no-repeat;
-  background-size: 120% 170%;
-  background-position: 50px -180px;
+  background-size: 140% 170%;
+  background-position: 0px -170px;
 }
 
 .midDiv3 {
-  width: 90%;
+  width: 70%;
   height: 160%;
   background: url(images/image-mockups.png) no-repeat;
-  background-size: 100% 100%;
-  position: relative;
+  background-size: 120% 100%;
+  position: absolute;
   top: -90px;
-  left: 25%;
+  right: 0px;
   z-index: 1;
 }
 
@@ -160,8 +147,13 @@ a {
 .articleImg {
   object-fit: fill;
   width: 100%;
-  height: 50%;
+  height: 100%;
   border-radius: 5px 5px 0 0;
+}
+
+.articleImgContainer{
+  width: 100%;
+  height: 50%;
 }
 
 .item1, .item2, .item3, .item4 {
@@ -171,8 +163,10 @@ a {
   padding-bottom: 12px;
 }
 
+
 .articleText {
-  padding: 15px;
+  word-wrap: break-word;
+  padding: 10px 15px;
 }
 
 /*******************footer Styling*****************************/
@@ -184,32 +178,42 @@ a {
   background-color: hsl(233, 26%, 24%);
   color: white;
   margin-top: 50px;
-  padding-top: 10px;
+  padding: 10px 0 10px;
 }
 
 .logoAndAboutUs {
   display: flex;
+  flex: wrap;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
+  width: 45%;
 }
 
-.logoImg2 {
-  display: block;
-  clear: both;
-  margin-bottom: 25px;
-}
-
-.icons {
-  display: inline-block;
-  float: left;
-  margin: 5px 15px 0 0px;
-}
-.contactList ul {
+.logoAndMediaIcons{
+  height: 80px;
+  width: 160px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  padding-left: 10px;
-  padding-top: 0px;
+  justify-content: space-between;
+}
+
+.iconClass {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactList1,
+.contactList2{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: inherit;
+  align-items: center;
+}
+
+.contactList1 li,
+.contactList2 li{
+  width: 50%;
 }
 
 .requestInviteDiv {
@@ -220,7 +224,7 @@ a {
 }
 
 .attribution {
-  font-size: 16px;
+  font-size: 0.8rem;
   text-align: center;
 }
 
